@@ -15,10 +15,22 @@ const FilmeSchema = new Schema({
         index: true,
         unique: true,
     },
-    nome: String,
-    ano: String,
-    imdb: String,
-    produtora: String
+    nome: {
+        type: String,
+        unique: true,
+    },
+    ano: {
+        type: String,
+        unique: true,
+    },
+    imdb: {
+        type: String,
+        unique: true,
+    },
+    produtora: {
+        type: String,
+        unique: true,
+    },
 });
 
 const FilmeModel = mongoose.model('FilmeModel', FilmeSchema);
