@@ -37,5 +37,42 @@ const Movie = {
             return error;
         }
     },
+
+    async update(data) {
+        try {
+            const validation = validate.validate(data, Constraints.update);
+            if (validation) {
+                const response = Constants.ErrorValidation;
+                response.message = validation;
+                return response;
+            }
+
+            const response = await MovieRepository.update(data);
+
+            if (response === []) {
+                const result = Constants.ErrorNotFound;
+                return result;
+            }
+            return response;
+        } catch (error) {
+            return error;
+        }
+    },
+    async delete(data) {
+        try {
+            const validation = validate.validate(data, Constraints.deleteBy);
+            if (validation) {
+                const response = Constants.ErrorValidation;
+                response.message = validation;
+                return response;
+            }
+
+            const response = await MovieRepository.delete(data);
+
+            return response;
+        } catch (error) {
+            return error;
+        }
+    },
 };
 module.exports = Movie;
