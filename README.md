@@ -31,16 +31,21 @@ Para rodar o código:
 * Certifique-se de ter o NodeJs instalado;
 * Clone esse repositório;
 * Abra o projeto na sua maquina e utilize o comando: npm install para instalar as dependencias;
-* E depois npm start, para compilar o projeto.
+* E depois npm start, para compilar o projeto;
+* Para executar os testes, utilize o comando: npm test.
 
 
 ## Especificacoes
 
-<img src="https://img.icons8.com/color/48/null/javascript--v1.png"/>O projeto foi desenvolvido utilizando a linguagem JavaScript.
+* O projeto foi desenvolvido utilizando a linguagem JavaScript;
+* No gerencimento de dependências, está sendo utilizado o NodeJs;
+* Banco de dados utilizado foi o MongoDB;
+* Para os testes unitários, foi utilizado o Jest;
 
-
+<h4 align="center">
+<img src="https://img.icons8.com/color/48/null/javascript--v1.png"/>
 <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/null/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png"/>
-Banco de dados utilizado foi o MongoD
+</h4>
 
 ## Autor
 
